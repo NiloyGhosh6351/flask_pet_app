@@ -1,7 +1,5 @@
-from flask import Flask, render_template, redirect, url_for
-from models import db, Pet
+from flask_sqlalchemy import SQLAlchemy  # type: ignore
 
-from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 class Pet(db.Model):

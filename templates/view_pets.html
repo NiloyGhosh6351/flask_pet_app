@@ -23,9 +23,24 @@
     </form>
     <h2>Existing Pets:</h2>
     <ul>
-        {% for pet in pets %}
-            <li>{{ pet.name }}, Age: {{ pet.age }}, Type: {{ pet.type }}</li>
-        {% endfor %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pet in pets %}
+                    <tr>
+                        <td>{{ pet.name }}</td>
+                        <td>{{ pet.age }}</td>
+                        <td>{{ pet.type }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </ul>
 </body>
 </html>

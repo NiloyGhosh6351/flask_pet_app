@@ -1,6 +1,6 @@
-from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
-from wtforms.validators import DataRequired
+from flask_wtf import FlaskForm  # type: ignore
+from wtforms import StringField, IntegerField, SubmitField  # type: ignore
+from wtforms.validators import DataRequired  # type: ignore
 
 class PetForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
